@@ -1,29 +1,23 @@
 {
-  "name": "flowbite-storyblok",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "lint": "eslint .",
-    "typecheck": "nuxt typecheck"
-  },
-  "dependencies": {
-    "@iconify-json/lucide": "^1.2.95",
-    "@iconify-json/simple-icons": "^1.2.72",
-    "@nuxt/ui": "^4.5.1",
-    "@storyblok/nuxt": "^10.0.0",
-    "nuxt": "^4.3.1",
-    "tailwindcss": "^4.2.1"
-  },
-  "devDependencies": {
-    "@nuxt/eslint": "^1.15.2",
-    "eslint": "^10.0.2",
-    "typescript": "^5.9.3",
-    "vite-plugin-mkcert": "^1.17.10",
-    "vue-tsc": "^3.2.5"
-  },
-  "packageManager": "pnpm@10.30.3"
+	"name": "nuxt-app",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix"
+	},
+	"dependencies": {
+		"nuxt": "^4.2.2",
+		"vue": "^3.5.18",
+		"vue-router": "^4.5.1"
+	},
+	"devDependencies": {
+		"@storyblok/nuxt": "^9.0.0",
+		"vite-plugin-mkcert": "^1.17.8"
+	}
 }

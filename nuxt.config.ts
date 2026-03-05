@@ -1,39 +1,40 @@
-// import mkcert from 'vite-plugin-mkcert'
+import mkcert from "vite-plugin-mkcert";
 
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: [
-    '@nuxt/eslint',
-    '@nuxt/ui',
-    [
-      '@storyblok/nuxt',
-      {
-        accessToken: process.env.STORYBLOK_DELIVERY_API_TOKEN,
-        apiOptions: {
-          region: 'eu'
-        }
-      }
-    ]
-  ],
+  compatibilityDate: "2026-01-13",
+  devtools: { enabled: false },
+  modules: ["@storyblok/nuxt"],
 
-  devtools: {
-    enabled: true
+  storyblok: {
+    accessToken: process.env.STORYBLOK_DELIVERY_API_TOKEN,
+    apiOptions: {
+      /** Set the correct region for your space. Learn more: https://www.storyblok.com/docs/packages/storyblok-js#example-region-parameter */
+      region: process.env.STORYBLOK_REGION || "eu",
+      /** The following code is only required when creating a Storyblok space directly via the Blueprints feature. */
+      endpoint: process.env.STORYBLOK_API_BASE_URL
+        ? `${new URL(process.env.STORYBLOK_API_BASE_URL).origin}/v2`
+        : undefined,
+    },
   },
 
-  css: ['~/assets/css/main.css'],
-
-  routeRules: {
-    '/': { prerender: true }
+  app: {
+    head: {
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://a.storyblok.com/f/212319/x/e6ccda03b8/blueprint-blank.css",
+        },
+      ],
+    },
   },
 
-  compatibilityDate: '2025-01-15',
+  ssr: true,
 
-  eslint: {
-    config: {
-      stylistic: {
-        commaDangle: 'never',
-        braceStyle: '1tbs'
-      }
-    }
-  }
-})
+  devServer: {
+    https: true,
+  },
+
+  vite: {
+    plugins: [mkcert()],
+  },
+});
