@@ -18,7 +18,7 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@4.3.1_@parcel+watcher@_7176bc1a0d6b9a05b3ccca4588e34790/node_modules/nuxt/dist/app/plugins/chunk-reload.client.js")> &
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@4.3.1_@parcel+watcher@_7176bc1a0d6b9a05b3ccca4588e34790/node_modules/nuxt/dist/pages/runtime/plugins/prefetch.client.js")> &
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@4.3.1_@parcel+watcher@_7176bc1a0d6b9a05b3ccca4588e34790/node_modules/nuxt/dist/pages/runtime/plugins/check-if-page-unused.js")> &
-  InjectionType<typeof import("../../node_modules/.pnpm/@storyblok+nuxt@10.0.0_@tip_b957c7dd0f4e5a0ec10070f0327f1c55/node_modules/@storyblok/nuxt/dist/runtime/plugin.js")> &
+  InjectionType<typeof import("../../node_modules/.pnpm/@storyblok+nuxt@9.0.2_nuxt@_13b8f2c6444da603fffea2930c59c986/node_modules/@storyblok/nuxt/dist/runtime/plugin.js")> &
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@4.3.1_@parcel+watcher@_7176bc1a0d6b9a05b3ccca4588e34790/node_modules/nuxt/dist/app/plugins/warn.dev.server.js")> &
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@4.3.1_@parcel+watcher@_7176bc1a0d6b9a05b3ccca4588e34790/node_modules/nuxt/dist/app/plugins/check-if-layout-used.js")>
 

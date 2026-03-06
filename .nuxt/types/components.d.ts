@@ -15,14 +15,18 @@ type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {},
 
 interface _GlobalComponents {
   AppLogo: typeof import("../../app/components/AppLogo.vue")['default']
+  ArticleCard: typeof import("../../app/components/ArticleCard.vue")['default']
+  Header: typeof import("../../app/components/Header.vue")['default']
   TemplateMenu: typeof import("../../app/components/TemplateMenu.vue")['default']
+  AllArticles: typeof import("../../app/storyblok/AllArticles.vue")['default']
+  Article: typeof import("../../app/storyblok/Article.vue")['default']
   ArticleOverview: typeof import("../../app/storyblok/ArticleOverview.vue")['default']
+  Feature: typeof import("../../app/storyblok/Feature.vue")['default']
   FeatureArticles: typeof import("../../app/storyblok/FeatureArticles.vue")['default']
-  MainArticle: typeof import("../../app/storyblok/MainArticle.vue")['default']
-  MainFeature: typeof import("../../app/storyblok/MainFeature.vue")['default']
-  MainGrid: typeof import("../../app/storyblok/MainGrid.vue")['default']
-  MainPage: typeof import("../../app/storyblok/MainPage.vue")['default']
-  MainTeaser: typeof import("../../app/storyblok/MainTeaser.vue")['default']
+  Grid: typeof import("../../app/storyblok/Grid.vue")['default']
+  Home: typeof import("../../app/storyblok/Home.vue")['default']
+  Page: typeof import("../../app/storyblok/Page.vue")['default']
+  Teaser: typeof import("../../app/storyblok/Teaser.vue")['default']
   NuxtWelcome: typeof import("../../node_modules/.pnpm/nuxt@4.3.1_@parcel+watcher@_7176bc1a0d6b9a05b3ccca4588e34790/node_modules/nuxt/dist/app/components/welcome.vue")['default']
   NuxtLayout: typeof import("../../node_modules/.pnpm/nuxt@4.3.1_@parcel+watcher@_7176bc1a0d6b9a05b3ccca4588e34790/node_modules/nuxt/dist/app/components/nuxt-layout")['default']
   NuxtErrorBoundary: typeof import("../../node_modules/.pnpm/nuxt@4.3.1_@parcel+watcher@_7176bc1a0d6b9a05b3ccca4588e34790/node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -47,14 +51,18 @@ interface _GlobalComponents {
   Body: typeof import("../../node_modules/.pnpm/nuxt@4.3.1_@parcel+watcher@_7176bc1a0d6b9a05b3ccca4588e34790/node_modules/nuxt/dist/head/runtime/components")['Body']
   NuxtIsland: typeof import("../../node_modules/.pnpm/nuxt@4.3.1_@parcel+watcher@_7176bc1a0d6b9a05b3ccca4588e34790/node_modules/nuxt/dist/app/components/nuxt-island")['default']
   LazyAppLogo: LazyComponent<typeof import("../../app/components/AppLogo.vue")['default']>
+  LazyArticleCard: LazyComponent<typeof import("../../app/components/ArticleCard.vue")['default']>
+  LazyHeader: LazyComponent<typeof import("../../app/components/Header.vue")['default']>
   LazyTemplateMenu: LazyComponent<typeof import("../../app/components/TemplateMenu.vue")['default']>
+  LazyAllArticles: LazyComponent<typeof import("../../app/storyblok/AllArticles.vue")['default']>
+  LazyArticle: LazyComponent<typeof import("../../app/storyblok/Article.vue")['default']>
   LazyArticleOverview: LazyComponent<typeof import("../../app/storyblok/ArticleOverview.vue")['default']>
+  LazyFeature: LazyComponent<typeof import("../../app/storyblok/Feature.vue")['default']>
   LazyFeatureArticles: LazyComponent<typeof import("../../app/storyblok/FeatureArticles.vue")['default']>
-  LazyMainArticle: LazyComponent<typeof import("../../app/storyblok/MainArticle.vue")['default']>
-  LazyMainFeature: LazyComponent<typeof import("../../app/storyblok/MainFeature.vue")['default']>
-  LazyMainGrid: LazyComponent<typeof import("../../app/storyblok/MainGrid.vue")['default']>
-  LazyMainPage: LazyComponent<typeof import("../../app/storyblok/MainPage.vue")['default']>
-  LazyMainTeaser: LazyComponent<typeof import("../../app/storyblok/MainTeaser.vue")['default']>
+  LazyGrid: LazyComponent<typeof import("../../app/storyblok/Grid.vue")['default']>
+  LazyHome: LazyComponent<typeof import("../../app/storyblok/Home.vue")['default']>
+  LazyPage: LazyComponent<typeof import("../../app/storyblok/Page.vue")['default']>
+  LazyTeaser: LazyComponent<typeof import("../../app/storyblok/Teaser.vue")['default']>
   LazyNuxtWelcome: LazyComponent<typeof import("../../node_modules/.pnpm/nuxt@4.3.1_@parcel+watcher@_7176bc1a0d6b9a05b3ccca4588e34790/node_modules/nuxt/dist/app/components/welcome.vue")['default']>
   LazyNuxtLayout: LazyComponent<typeof import("../../node_modules/.pnpm/nuxt@4.3.1_@parcel+watcher@_7176bc1a0d6b9a05b3ccca4588e34790/node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
   LazyNuxtErrorBoundary: LazyComponent<typeof import("../../node_modules/.pnpm/nuxt@4.3.1_@parcel+watcher@_7176bc1a0d6b9a05b3ccca4588e34790/node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>

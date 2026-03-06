@@ -30,5 +30,5 @@ export { requestIdleCallback, cancelIdleCallback } from '#app/compat/idle-callba
 export { setInterval } from '#app/compat/interval';
 export { definePageMeta } from '../node_modules/.pnpm/nuxt@4.3.1_@parcel+watcher@_7176bc1a0d6b9a05b3ccca4588e34790/node_modules/nuxt/dist/pages/runtime/composables';
 export { defineLazyHydrationComponent } from '#app/composables/lazy-hydration';
-export { useAsyncStoryblok } from '../node_modules/.pnpm/@storyblok+nuxt@10.0.0_@tip_b957c7dd0f4e5a0ec10070f0327f1c55/node_modules/@storyblok/nuxt/dist/runtime/composables/useAsyncStoryblok';
-export { useStoryblok, useStoryblokApi, useStoryblokBridge, renderRichText, StoryblokRichText, useStoryblokRichText, MarkTypes, BlockTypes, LinkTypes, TextTypes, ComponentBlok, asTag, StoryblokRichTextDocumentNode, StoryblokRichTextImageOptimizationOptions, StoryblokRichTextNode, StoryblokRichTextNodeTypes, StoryblokRichTextOptions } from '@storyblok/vue';
+export { useAsyncStoryblok } from '../node_modules/.pnpm/@storyblok+nuxt@9.0.2_nuxt@_13b8f2c6444da603fffea2930c59c986/node_modules/@storyblok/nuxt/dist/runtime/composables/useAsyncStoryblok';
+export { useStoryblok, useStoryblokApi, useStoryblokBridge, renderRichText, StoryblokRichText, useStoryblokRichText, MarkTypes, BlockTypes, LinkTypes, AssetTypes, StoryblokRichTextResolvers, StoryblokRichTextDocumentNode, StoryblokRichTextImageOptimizationOptions, StoryblokRichTextNode, StoryblokRichTextNodeResolver, StoryblokRichTextNodeTypes, StoryblokRichTextOptions } from '@storyblok/vue';

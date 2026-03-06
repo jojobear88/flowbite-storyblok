@@ -1,5 +1,5 @@
 <script setup>
-import Home from './Home.vue';
+import Home from '/storyblok/Home.vue';
 </script>
 
 <template>

@@ -3,10 +3,11 @@ defineProps({ blok: Object })
 </script>
 
 <template>
-  <div
-    v-editable="blok"
-    class="feature"
-  >
-    <span>{{ blok.name }}</span>
+  <div v-editable="blok">
+    <div class="w-full bg-gray-100 rounded-md text-center overflow-hidden feature">
+      <div class="px-12 py-6">
+        <h1 class="text-xl">{{ blok.name }}</h1>
+      </div>
+    </div>
   </div>
 </template>
