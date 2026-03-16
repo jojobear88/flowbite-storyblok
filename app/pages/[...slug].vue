@@ -12,9 +12,7 @@ const { story } = await useAsyncStoryblok(
   slug && slug.length > 0 ? slug.join('/') : 'home',
   {
     api: {
-      version: 'draft',
-      resolve_relations: 'featured-articles.articles',
-      language
+      version: 'draft'
     }
   }
 )

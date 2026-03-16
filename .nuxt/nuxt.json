@@ -1,9 +1,9 @@
 {
-  "_hash": "W4N1wtP205NbmMs3vyByuPCUYsKsUFNgzqDvWteFBc4",
+  "_hash": "p1d6q6m2cO3Y_lgeWyYA_0Nw4VCl3oCB6kYvn226NWQ",
   "project": {
     "rootDir": "C:/Work/sample/flowbite-storyblok"
   },
   "versions": {
-    "nuxt": "4.3.1"
+    "nuxt": "4.4.2"
   }
 }
